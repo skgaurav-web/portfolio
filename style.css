@@ -9,6 +9,9 @@ body{
     color: #ededed;
     background: #081b29;
 }
+.sv-color{
+    fill: #00eeff;
+}
 .header{
     position: fixed;
     top: 0;
