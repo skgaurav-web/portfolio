@@ -428,28 +428,28 @@
              
 
               if (name === "") {
-                swal("Oops!", "Please enter your name first.", "error");
+                swal("Are Bhai!", "Naam to bta do.", "error");
                   
                   nameField.focus();
                   return;
               }
 
               if (!emailPattern.test(email)) {
-                swal("Oops!", "Please enter a valid email address.", "error");
+                swal("Oo Bhai!", "Sahi se email likh", "error");
                   
                   emailField.focus();
                   return;
               }
 
               if (email.toLowerCase() === myEmail.toLowerCase()) {
-                swal("Hey! ", "Please use you own email address to send message.", "error");
+                swal("Hey Prabhu! ", "Apna email daliy maharaj!", "error");
 
                   
                   emailField.focus();
                   return;
               }
               if (message === "") {
-                swal("Oops!", "Please enter your message first.", "error");
+                swal("Are Bhai!", "Message kya dena hai?", "error");
                   
                   messageField.focus();
                   return;
@@ -463,10 +463,10 @@
         message: message
     })
     .then(function(response) {
-        swal("Awesome!", "Message sent successfully!", "success");
+        swal("Badhai Ho!", "App ka Message Pahunch Gayega!", "success");
        
     }, function(error) {
-        swal("Oops!", "Failed to send message. Please try again later.", "error");
+        swal("Maafi Please!", "Message avi nahi pahunch gayega", "error");
        
     });
 });
